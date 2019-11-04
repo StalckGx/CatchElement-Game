@@ -1,0 +1,8 @@
+.output {
+    background-color: darkcyan;
+    height: 480px;
+    width: 800px;
+    border: 2px solid black;
+    overflow: hidden;
+    cursor: grab;
+}
