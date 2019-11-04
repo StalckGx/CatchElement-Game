@@ -13,19 +13,6 @@
             X: <span class="x">0</span> - Y: <span class="y">0</span>
         </div>
 
-        <script>
-            const output = document.querySelector(".output");
-            const messageOut = document.querySelectorAll(".message span");
-            output.addEventListener("mouseenter", function(){
-                output.style.backgroundColor = "cyan";
-            });
-            output.addEventListener("mouseleave", function(){
-                output.style.backgroundColor = "darkcyan";
-            });
-            output.addEventListener("mousemove", function(e){
-                messageOut[0].innerText = e.x
-                messageOut[1].innerText = e.y
-            });
-        </script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
