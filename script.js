@@ -1,6 +1,8 @@
 const output = document.querySelector (".output");
 const messageOut = document.querySelectorAll (".message span");
 
+let score = 0;
+
 output.addEventListener ("mouseenter", function () {
     output.style.backgroundColor = "cyan";
 });
@@ -30,6 +32,9 @@ document.addEventListener ("DOMContentLoaded", function () {
     div.addEventListener ("click", function(e) {
         div.tempColor = "#" + Math.random().toString(16).substr(-6);
         div.style.backgroundColor = div.tempColor;
+
+        score++;
+        messageOut[2].innerText = score;
     });
 
     div.steps = Math.random() * 20;
@@ -38,7 +43,7 @@ document.addEventListener ("DOMContentLoaded", function () {
 })
 
 function move () {
-    let speed = Math.random() * 10 + 15;
+    let speed = Math.random() * 4 + 8;
     const box = document.querySelector (".box");
     let bounds = output.getBoundingClientRect();
     
