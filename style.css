@@ -6,3 +6,12 @@
     overflow: hidden;
     cursor: grab;
 }
+
+.box {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
